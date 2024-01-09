@@ -1,0 +1,138 @@
+// ---------------------------------------- InvokeURL to post data using webhook  ----------------------------------------
+
+// studentList = list();
+
+// student = Map();
+// student.put("firstName", firstName);
+// student.put("lastName", lastName);
+// student.put("email", email);
+// studentList.add(student);
+
+// student2 = map();
+// student2.put("firstName", "Rico");
+// student2.put("lastName", "Susan");
+// student2.put("email", "demo@gmail.com");
+// studentList.add(student2);
+
+// parameters = map();
+// parameters.put("Student", studentList);
+
+// response = invokeUrl
+// [ 
+//  url: "https://flow.zoho.in/60026319872/flow/webhook/incoming?zapikey=1001.fae4d4fe4a576e20d6011b33dd37eb74.e490b2811fcf23be0ce399a4f49511fb&isdebug=false"
+//  type: POST 
+//  parameters: parameters
+// ];
+
+// info parameters ;
+
+
+// ------------------------------------------------ GetRecords API using Zoho CRM Leads Section -----------------------------------------------
+
+
+myleads = zoho.crm.getRecords("Leads", 1,10);
+
+for each lead in myleads{
+	info (lead.get("First_Name"));
+}
+
+
+//--------------------------------------------------- Get & Attach Files to Records ---------------------------------------------------------------
+
+//  myfile = invokeUrl
+//  [
+//  url: "https://image.pi7.org/static/img/ic_100kb.png"
+//  type: GET
+//  ];
+
+// info myfile ;
+ 
+ 
+// // myLeads = zoho.crm.getRecords("Leads", 1, 25);
+// // myleadId = null;
+ 
+// //  for each lead in myLeads {
+// // 	 if(lead.get("Last_Name").equalsIgnoreCase("Maclead (Sample)")){
+// // 		 myleadId = (lead.get("id"));
+// // 	 }
+// //  }
+ 
+// // attachfile = zoho.crm.attachFile("Leads", myleadId, myfile);
+// // info attachfile ;
+
+ 
+//----------------------------------------------------------  UpdateRecords Api with Zoho Integration ------------------------------------------------
+ 
+
+
+// myleads = zoho.crm.getRecords("Leads", 1,25);
+// myleadId = null;
+
+// for each lead in myleads{
+// 	if(lead.get("Last_Name").equalsIgnoreCase("Maclead (Sample)")){
+// 		myleadId  = lead.get("id");
+// 	}
+// }
+
+// updateLeadFirstRow = zoho.crm.updateRecord("Leads", myleadId, {"First_Name" : "MAMAJAMA"});
+// info(updateLeadFirstRow);
+
+ 
+
+// --------------------------------------------------  GetRecordById API with Zoho Integration ------------------------------------------------------
+
+// myLeads = zoho.crm.getRecords("Leads", 1,10); 
+// firstLead = myLeads.get(0);
+// lead = firstLead.get("id");
+
+// fetchRecord = zoho.crm.getRecordById("Leads", lead);
+// info (fetchRecord.get("First_Name") + " " + fetchRecord.get("Last_Name"));
+
+
+//------------------------------------------------- SearchRecords API ---------------------------------------
+
+// searchRecordResponse = zoho.crm.searchRecords("Leads", "(Company:equals:Chapman)",1,10);
+
+// for each record in searchRecordResponse{
+// 	info (record.get("First_Name") + " " + record.get("Last_Name"));
+// }
+
+
+//-------------------------------------------------------------- Sending Emails ----------------------------------------------------------
+
+ 
+//  sendmail
+//  [
+//  	from: zoho.adminuserid
+//  	to: "sharikofficial99@gmail.com"
+//  	subject: "Your Amazing"
+//  	message: "You have amazing deluge Skills"
+//  ]
+ 
+ //---------------------------------------------- Update Record with Zoho Integration -------------------------------------------------
+ 
+//  searchRecord = zoho.crm.searchRecords("Leads", "(Company:equals:Chapman)",1,10);
+ 
+//  for each record in searchRecord{
+// 	 if(record.get("Last_Name").equalsIgnoreCase("Hirpara (Sample)")){
+// 		 if(record.get("First_Name").equalsIgnoreCase("Felix")){
+// 			 felixhirpara = record.get("id");
+			 
+// 			 updateKeyValue = map();
+// 			 updateKeyValue.put("Email", "Khansharik@gmail.com");
+// 			 update = zoho.crm.updateRecord("Leads",felixhirpara, updateKeyValue);
+// 			 info (update) ;
+// 		 }
+// 	 }
+//  }
+ 
+ 
+// ------------------------------------------------ Zoho Crm GetRecords API With Parameters Deluge sorting  ------------------------------------------------
+
+
+// leads = zoho.crm.getRecords("Leads", 1,10,{"sort_by" :"Last_Name", "sort_order" : "asc"});
+
+// for each lead in leads{
+// 	info (lead.get("Last_Name"));
+// }
+
