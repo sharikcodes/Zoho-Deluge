@@ -1,30 +1,19 @@
 // ---------------------------------------- InvokeURL to post data using webhook  ----------------------------------------
 
-// studentList = list();
+parameter = Map();
+// parameter.put("firstName", firstName);
+// parameter.put("lastName", lastName);
+// parameter.put("Email", email);
 
-// student = Map();
-// student.put("firstName", firstName);
-// student.put("lastName", lastName);
-// student.put("email", email);
-// studentList.add(student);
 
-// student2 = map();
-// student2.put("firstName", "Rico");
-// student2.put("lastName", "Susan");
-// student2.put("email", "demo@gmail.com");
-// studentList.add(student2);
 
-// parameters = map();
-// parameters.put("Student", studentList);
 
 // response = invokeUrl
 // [ 
-//  url: "https://flow.zoho.in/60026319872/flow/webhook/incoming?zapikey=1001.fae4d4fe4a576e20d6011b33dd37eb74.e490b2811fcf23be0ce399a4f49511fb&isdebug=false"
-//  type: POST 
-//  parameters: parameters
+//  url: "https://flow.zoho.in/60026319872/flow/webhook/incoming?zapikey=1001.7b3c865e0b0dcaa63eb0b39f738b8112.a0f32c961ee6f8f65e9dfc4484fdb6cb&isdebug=false"
+//  type: POST
+//  parameters: parameter
 // ];
-
-// info parameters ;
 
 
 // ------------------------------------------------ GetRecords API using Zoho CRM Leads Section -----------------------------------------------
