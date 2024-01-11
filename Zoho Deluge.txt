@@ -1,9 +1,9 @@
 // ---------------------------------------- InvokeURL to post data using webhook  ----------------------------------------
 
 parameter = Map();
-// parameter.put("firstName", firstName);
-// parameter.put("lastName", lastName);
-// parameter.put("Email", email);
+// parameter.put("firstName", "Sharik);
+// parameter.put("lastName", "Khan");
+// parameter.put("Email", "sharik@gmail.com");
 
 
 
