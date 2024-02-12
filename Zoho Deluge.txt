@@ -1,19 +1,17 @@
-// ---------------------------------------- InvokeURL to post data using webhook  ----------------------------------------
+//---------------------------------- Create record using Zoho Integration -----------------------------------
 
-parameter = Map();
-// parameter.put("firstName", "Sharik");
-// parameter.put("lastName", "Khan");
-// parameter.put("Email", "sharik@gmail.com");
+//   Record =  { 
+//   "Company" : "Deloitte",
+//   "First_Name" : "Chaplin",
+//   "Last_Name" : "Jazz",
+//   "Email" : "chaplinkazz@deloitte.com",
+//   "Phone" : "2154125789"
+//  };
+
+// send = zoho.crm.createRecord("Leads", Record);
+// info send;
 
 
-
-
-// response = invokeUrl
-// [ 
-//  url: "https://flow.zoho.in/60026319872/flow/webhook/incoming?zapikey=1001.7b3c865e0b0dcaa63eb0b39f738b8112.a0f32c961ee6f8f65e9dfc4484fdb6cb&isdebug=false"
-//  type: POST
-//  parameters: parameter
-// ];
 
 
 // ------------------------------------------------ GetRecords API using Zoho CRM Leads Section -----------------------------------------------
