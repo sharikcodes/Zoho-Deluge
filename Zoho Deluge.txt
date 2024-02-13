@@ -85,16 +85,6 @@ for each lead in myleads{
 // }
 
 
-//-------------------------------------------------------------- Sending Emails ----------------------------------------------------------
-
- 
-//  sendmail
-//  [
-//  	from: zoho.adminuserid
-//  	to: "sharikofficial99@gmail.com"
-//  	subject: "Your Amazing"
-//  	message: "You have amazing deluge Skills"
-//  ]
  
  //---------------------------------------------- Update Record with Zoho Integration -------------------------------------------------
  
